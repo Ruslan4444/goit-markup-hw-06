@@ -618,6 +618,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+  color: #ffffff;
 }
 .footer-subscribe-svg {
   width: 24px;
