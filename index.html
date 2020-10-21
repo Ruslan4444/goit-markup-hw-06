@@ -468,27 +468,52 @@
           <label class="modal-form-field">
             Имя
             <span class="modal-form-field-wrapper">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-form-input"
-              /> </span
-          ></label>
+              <input type="text" name="user-name" class="modal-form-input" />
+              <svg width="18" height="18" class="modal-form-svg-icon">
+                <use href="./images/modal-window/person.svg"></use>
+              </svg>
+            </span>
+          </label>
           <label class="modal-form-field">
             Телефон
-            <span class="modal-form-field-wrapper"> <input type="text" /> </span
-          ></label>
+            <span class="modal-form-field-wrapper">
+              <input type="tel" name="user-phone" class="modal-form-input" />
+              <svg width="18" height="18" class="modal-form-svg-icon">
+                <use href="./images/modal-window/person.svg"></use>
+              </svg>
+            </span>
+          </label>
           <label class="modal-form-field">
             Почта
-            <span class="modal-form-field-wrapper"> <input type="text" /> </span
-          ></label>
+            <span class="modal-form-field-wrapper">
+              <input type="mail" name="user-mail" class="modal-form-input" />
+              <svg width="18" height="18" class="modal-form-svg-icon">
+                <use href="./images/modal-window/person.svg"></use>
+              </svg>
+            </span>
+          </label>
           <label class="modal-form-field">
             Комментарий
-            <span class="modal-form-field-wrapper"> <input type="text" /> </span
-          ></label>
-          <label class="modal-form-field">
-            <span> <input type="text" /> </span
-          ></label>
+            <span class="modal-form-field-wrapper">
+              <textarea
+                name="user-message"
+                id=""
+                class="modal-form-message"
+                placeholder="Введите текст"
+              ></textarea>
+            </span>
+          </label>
+          <input
+            type="checkbox"
+            name="user-policy"
+            value="accept-policy"
+            class="modal-form-policy visually-hidden"
+            id="check-policy"
+          />
+          <label for="check-policy" class="modal-form-policy-label">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="modal-form-policy-link">Условия договора</a>
+          </label>
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
       </div>
