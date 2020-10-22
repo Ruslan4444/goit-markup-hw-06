@@ -782,7 +782,8 @@ body {
   color: #757575;
 }
 .modal-form-policy-link {
-  margin-right: 4px;
+  display: block;
+  margin-left: 4px;
   color: var(--accent-color);
 }
 .modal-form-policy:checked + .modal-form-policy-label::before {
