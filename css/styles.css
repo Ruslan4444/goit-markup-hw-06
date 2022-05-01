@@ -667,7 +667,12 @@ img {
   margin: 0;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: var(--primary-bg-color);
+}
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
+  background-color: var(--primary-bg-color);
 }
