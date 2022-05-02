@@ -677,6 +677,7 @@ img {
   fill: var(--accent-color);
   background-color: var(--primary-bg-color);
 }
+
 .modal-title {
   margin-bottom: 12px;
 
@@ -697,6 +698,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms var(--timing-function);
 }
 .form-input:focus {
   border-color: var(--accent-color);
@@ -708,7 +710,8 @@ img {
   margin-bottom: 10px;
 }
 .form-field-privacy {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .form-input-svg {
   position: absolute;
@@ -717,6 +720,7 @@ img {
 
   margin-left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
 }
 .form-label {
   margin-bottom: 4px;
@@ -736,6 +740,7 @@ img {
   border-radius: 4px;
   outline: none;
   resize: none;
+  transition: border-color 250ms var(--timing-function);
 }
 .form-textarea:focus {
   border: 1px solid var(--accent-color);
@@ -748,21 +753,25 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-btn-submit {
-  display: inline-block;
+  display: block;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 55px;
+  margin: 0px auto;
 
   box-shadow: 0px 4px 4px var(--btn-shadow);
 }
 .privacy {
-  margin-right: 9px;
+  margin-right: 7px;
 }
 .privacy-text {
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  align-items: center;
 }
 .privacy-link {
   font-weight: 400;
@@ -775,4 +784,21 @@ img {
 .form-label {
   display: block;
   width: 100%;
+}
+.privacy-icon {
+  content: '';
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 1px solid var(--tittle-text-color);
+  transition: background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+}
+.privacy-icon {
+  fill: transparent;
+}
+.privacy:checked + .privacy-text .privacy-icon {
+  background-color: var(--accent-color);
+  border: none;
+  fill: var(--primary-color);
 }

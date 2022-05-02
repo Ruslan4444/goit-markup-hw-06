@@ -531,7 +531,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-field-privacy">
+          <div class="form-field">
             <label for="user-comment" class="form-label">Комментарий</label>
             <textarea
               name="user-comment"
@@ -540,14 +540,17 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-field">
+          <div class="form-field-privacy">
             <input
               type="checkbox"
-              class="privacy"
+              class="privacy visually-hidden"
               name="modal-check"
               id="modal-check"
             />
             <label class="privacy-text" for="modal-check">
+              <svg width="16" height="15" class="privacy-icon">
+                <use href="./images/sprite.svg#icon-privacy"></use>
+              </svg>
               Соглашаюсь с рассылкой и принимаю &nbsp;<a
                 href=""
                 class="privacy-link link"
