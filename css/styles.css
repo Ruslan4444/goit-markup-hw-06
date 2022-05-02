@@ -696,6 +696,7 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 .form-input:focus {
   border-color: var(--accent-color);
@@ -733,6 +734,7 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
   resize: none;
 }
 .form-textarea:focus {
