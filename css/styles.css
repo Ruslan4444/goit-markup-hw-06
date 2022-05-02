@@ -698,7 +698,7 @@ img {
   border-radius: 4px;
 }
 .form-input:focus {
-  border-color: red;
+  border-color: var(--accent-color);
 }
 .form-input:focus + .form-input-svg {
   fill: var(--accent-color);
